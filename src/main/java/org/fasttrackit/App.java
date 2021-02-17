@@ -6,9 +6,14 @@ public class App
     public static void main( String[] args )
 
     {
-        System.out.println( "Exercitiu de weekend!" );
+        System.out.println( "Overloading" );
+
         Operation operation = new Operation();
-        operation.suma();
+
+        System.out.println(operation.suma(2));
+        System.out.println(operation.inmultire(55, 10));
+        System.out.println(operation.impartire(10, 2));
+
     }
 
 

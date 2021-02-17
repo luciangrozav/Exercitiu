@@ -1,29 +1,39 @@
 package org.fasttrackit;
 
-import org.fasttrackit.utils.ScannerUtils;
 
 public class Operation {
 
-public void suma ()
+public double suma (double a)  // overloading la metoda suma
 {
-    System.out.println("Calculam a+b: ");
-    int a = geta();
-    int b = getb();
-    System.out.println("a+b= " + (a+b));
-    System.out.println("a*b= " + (a*b));
-    System.out.println("a/b= "+ (a/b));
+    return suma(a, 10);
 }
 
-private int geta ()
+public double suma ( double a, double b)
 {
-    System.out.println("a= ");
-    return ScannerUtils.nextIntAndMoveToNextLine();
+    return a+b;
 }
-    private int getb ()
-    {
-        System.out.println("b= ");
-        return ScannerUtils.nextIntAndMoveToNextLine();
-    }
+
+public double inmultire (double a, double b)
+{
+    return a*b;
+}
+
+public double impartire (double a, double b)
+{
+    return a/b;
+}
+
+
+//private int geta ()  // pt citirea variabilelor
+//{
+//    System.out.println("a= ");
+//    return ScannerUtils.nextIntAndMoveToNextLine();
+//}
+//    private int getb ()
+//    {
+//        System.out.println("b= ");
+//        return ScannerUtils.nextIntAndMoveToNextLine();
+//    }
 
 
 }
